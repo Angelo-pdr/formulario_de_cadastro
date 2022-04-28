@@ -42,6 +42,7 @@ export const Container = styled.div`
         border: 1px solid white;
         cursor: pointer;
     }
+
 `
 export const HeaderText = styled.h1`
     text-align: center;
