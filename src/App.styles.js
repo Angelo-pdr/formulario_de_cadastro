@@ -22,6 +22,7 @@ export const Container = styled.div`
     border-radius: 10px;
     padding: 15px;
     text-align: center;
+    
    
     input{
         margin: 5px 0;
