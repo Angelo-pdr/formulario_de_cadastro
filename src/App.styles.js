@@ -29,11 +29,18 @@ export const Container = styled.div`
         outline: none;
         padding: 5px;
         width: 70%;
-     
+        border-radius: 3px;
+        border: none;
     }
     
     .submit{
+        margin-top: 20px;
         width: 50%;
+        background-color: transparent;
+        color: white;
+        padding: 8px 1px;
+        border: 1px solid white;
+        cursor: pointer;
     }
 `
 export const HeaderText = styled.h1`
