@@ -21,7 +21,7 @@ export const Container = styled.div`
     color: white;
     border-radius: 10px;
     padding: 15px;
-    
+    text-align: center;
     
     .submit{
         margin-top: 20px;
@@ -31,6 +31,7 @@ export const Container = styled.div`
         padding: 8px 1px;
         border: 1px solid white;
         cursor: pointer;
+        
     }
 
 `

@@ -1,13 +1,11 @@
 import {useState} from 'react';
 import * as C from './styles';
 
-export const InputSenha = ({title, img, type}) => {
+export const InputUsuario = ({title, type}) => {
 
     return(
         <C.Container>
             <C.Input types={type} placeholder={title}></C.Input>
-            <C.Img src={img} alt="olhos"></C.Img>
         </C.Container>
     )
 }
-

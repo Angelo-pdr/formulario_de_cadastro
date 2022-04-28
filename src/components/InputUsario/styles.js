@@ -19,10 +19,3 @@ export const Input = styled.input`
     border-radius: 3px;
     border: none;
 `
-
-export const Img = styled.img`
-   height: 20px;
-   margin: auto;
-   margin-right: 5px;
-   cursor: pointer;
-`
