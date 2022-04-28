@@ -4,22 +4,22 @@ export const Container = styled.div`
     background-color: white;
     width: 74%;
     border-radius: 3px;
-    right: 3111111111111110px;
-    margin: 5px 0;
+    margin: 10px 0;
     margin-left: 45px;
-    
+    position: relative
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 
 export const Input = styled.input`
-    
-    margin: 0;
-    padding: 0;
+    padding: 5px 5px;
+    width: 30vw;
+    outline: none;
+    border-radius: 3px;
+    border: none;
 `
 
 export const Img = styled.img`
-    position:absolute;
-    height: 25px;
-    margin: auto;
-    top: 51%;
-    left: 50%;
+   height
 `

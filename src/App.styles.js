@@ -21,18 +21,7 @@ export const Container = styled.div`
     color: white;
     border-radius: 10px;
     padding: 15px;
-    text-align: center;
     
-   
-    input{
-        margin: 5px 0;
-        font-size: 16px;
-        outline: none;
-        padding: 5px;
-        width: 70%;
-        border-radius: 3px;
-        border: none;
-    }
     
     .submit{
         margin-top: 20px;

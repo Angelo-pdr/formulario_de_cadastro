@@ -11,8 +11,8 @@ function App() {
         <C.HeaderText>Registro</C.HeaderText>
         <C.Paragrafo>Registre-se agora no <span className='servido'>seu servido</span></C.Paragrafo>
           
-            <InputSenha type="text" title= "Senha" img={img}/>
-            <InputSenha type="email" title= "Senha" img={img}/>
+            <InputSenha type="text" title= "Usuario" img={img}/>
+            <InputSenha type="email" title= "E-mail" img={img}/>
             <InputSenha type="password" title= "Senha" img={img}/>
             <InputSenha type="password" title= "Confirmar senha" img={img}/>
             

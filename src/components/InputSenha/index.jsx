@@ -7,7 +7,7 @@ export const InputSenha = ({title, img, type}) => {
     return(
         <C.Container>
             <C.Input type={type} placeholder={title}></C.Input>
-            <C.Img src={img}></C.Img>
+            <C.Img src={''}></C.Img>
         </C.Container>
     )
 }
