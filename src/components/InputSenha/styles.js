@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.div``
+
+export const Area = styled.div`
     background-color: white;
     width: 74%;
     border-radius: 3px;

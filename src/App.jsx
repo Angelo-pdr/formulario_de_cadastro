@@ -16,7 +16,6 @@ function App() {
             <InputUsuario type={"text"} title="Usuario"/>
             <InputUsuario type={"email"} title="E-mail"/>
             <InputSenha type={type} title="Senha" img={img}/>
-            <InputSenha type={type} title="Confirmar senha" img={img}/>
             
           <input type="submit" value="Registrar-se" className='submit' />
       </C.Container>
