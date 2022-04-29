@@ -2,10 +2,8 @@ import * as C from './App.styles'
 import {InputPassword} from './components/InputPassword'
 import {useState} from 'react'
 import {InputUser} from './components/InputUser'
-function App() {
 
-  
-  const [type, setTypes] = useState ("password")
+function App() {
 
   return (
     <C.Body>
@@ -14,7 +12,7 @@ function App() {
         <C.Paragrafo>Registre-se agora no <span className='servido'>seu servido</span></C.Paragrafo>
           
             <InputUser  />
-            <InputPassword title="Senha" img={image} />
+            <InputPassword />
             
           <input type="submit" value="Registrar-se" className='submit' />
       </C.Container>
