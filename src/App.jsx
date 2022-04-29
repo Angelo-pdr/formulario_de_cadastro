@@ -1,12 +1,22 @@
 import * as C from './App.styles'
-import {InputSenha} from './components/InputSenha'
+import {InputPassword} from './components/InputPassword'
 import {useState} from 'react'
 import {InputUsuario} from './components/InputUsario'
 function App() {
 
-  const [img, setImg] = useState("../src/img/mostra.jpg")
+  const [image, setImage] = useState("../src/img/mostra.jpg")
   const [type, setTypes] = useState ("password")
-  
+  const [register,setRegister] = useState ([])
+
+  const saveRegister = (password) => {
+    
+    register.push({
+      senha:password
+    })
+    console.log(register)
+    setRegister(register)
+  }
+
   return (
     <C.Body>
       <C.Container>
@@ -15,7 +25,7 @@ function App() {
           
             <InputUsuario type={"text"} title="Usuario"/>
             <InputUsuario type={"email"} title="E-mail"/>
-            <InputSenha type={type} title="Senha" img={img}/>
+            <InputPassword type={type} title="Senha" img={image} onPassword={saveRegister}/>
             
           <input type="submit" value="Registrar-se" className='submit' />
       </C.Container>

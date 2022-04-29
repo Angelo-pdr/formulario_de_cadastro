@@ -1,13 +1,17 @@
 import {useState} from 'react';
 import * as C from './styles';
 
-export const InputSenha = ({title, img, type}) => {
+export const InputPassword= ({title, img, type, onPassword}) => {
 
     const [password, setPassword] = useState ('')
     const [confirmPassword,setConfirmPassword] = useState ('')
 
-    const handleNewSenha = ( ) => {
-        if((password.trim() === confirmPassword.trim)  )
+    const handlePassword = ( ) => {
+        if((password.trim() === confirmPassword.trim()) 
+         && (password.trim() != "" && confirmPassword.trim() != "")){
+          onPassword(password)
+        }
+        
     }
 
     return(
@@ -17,8 +21,8 @@ export const InputSenha = ({title, img, type}) => {
             type={type} 
             placeholder={title}
             value={password}
-            onChange={ event => setSenha(event.target.value)}
-            onKeyUp={handleNewSenha}
+            onChange={ event => setPassword(event.target.value)}
+            onKeyUp={handlePassword}
             >
 
             </C.Input>
@@ -30,8 +34,8 @@ export const InputSenha = ({title, img, type}) => {
             type={type} 
             placeholder={title}
             value={confirmPassword}
-            onChange={ event => setSenha(event.target.value)}
-            onKeyUp={handleNewSenha}
+            onChange={ event => setConfirmPassword(event.target.value)}
+            onKeyUp={handlePassword}
             >
 
             </C.Input>
