@@ -6,6 +6,12 @@ export const InputUser = () => {
     const [name, setName] = useState ('')
     const [email, setEmail] = useState('')
 
+    const handleUser = () => {
+        if( name.trim != '' && email != ''){
+            console.log(name, email)
+        }
+    }
+
     const  registerUser = () => {
         if(name.trim() != '' && email.trim != ''){
             console.log(name, email)

@@ -4,6 +4,9 @@ import {InputUser} from '../InputUser'
 
 export const RegistrationScreen = () => {
 
+    const mostraTela =() => {
+        
+    }
     return(
         <C.Container>
         <C.HeaderText>Registro</C.HeaderText>
@@ -12,7 +15,7 @@ export const RegistrationScreen = () => {
             <InputUser  />
             <InputPassword />
             
-          <input type="submit" value="Registrar-se" className='submit' />
+          <input type="submit" value="Registrar-se" className='submit' onClick={mostraTela} />
       </C.Container>
     )
 }
