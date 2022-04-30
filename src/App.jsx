@@ -1,21 +1,12 @@
 import * as C from './App.styles'
-import {InputPassword} from './components/InputPassword'
 import {useState} from 'react'
-import {InputUser} from './components/InputUser'
+import {RegistrationScreen} from './components/RegistrationScreen'
 
-function App() {
+const App = () => {
 
   return (
     <C.Body>
-      <C.Container>
-        <C.HeaderText>Registro</C.HeaderText>
-        <C.Paragrafo>Registre-se agora no <span className='servido'>seu servido</span></C.Paragrafo>
-          
-            <InputUser  />
-            <InputPassword />
-            
-          <input type="submit" value="Registrar-se" className='submit' />
-      </C.Container>
+      <RegistrationScreen />
     </C.Body>
   )
 }
