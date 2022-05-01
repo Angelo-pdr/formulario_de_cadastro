@@ -1,14 +1,14 @@
 import {useState,KeyboardEvent} from 'react';
 import * as C from './styles';
 
-export const InputUser = () => {
+export const InputUser = ({mostraTela}) => {
 
     const [name, setName] = useState ('')
     const [email, setEmail] = useState('')
 
     const handleUser = () => {
         if( name.trim != '' && email != ''){
-            console.log(name, email)
+            mostraTela(name, email)
         }
     }
 

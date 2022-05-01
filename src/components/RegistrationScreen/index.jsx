@@ -4,15 +4,18 @@ import {InputUser} from '../InputUser'
 import { useState } from 'react'
 
 export const RegistrationScreen = () => {
-    
+
     const [cadastro, setCadastro] = useState([])
 
-    const mostraTela =(taskname, email) => {
+    const mostraTela =(taskName, taskEmail, taskPassoword) => {
         const newCadastro = [...cadastro]
-         newCadastro.push({
-            name: taskname,
-            newEmail: email
-         })
+        if( taskname && email && passoword){
+            newCadastro.push({
+                name: taskName,
+                email: taskEmail,
+                passoword: taskPassoword
+             })
+        }
         setCadastro(newCadastro)
         console.log(cadastro)
     }
