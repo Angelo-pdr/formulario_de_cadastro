@@ -6,9 +6,10 @@ export const InputUser = ({mostraTela}) => {
     const [name, setName] = useState ('')
     const [email, setEmail] = useState('')
 
-    const handleUser = () => {
-        if( name.trim != '' && email != ''){
-            mostraTela(name, email)
+    const handleUser = (event) => {
+        if( name.trim() != '' && email.trim() != '' && event.onClick){
+            mostraTela(name.t, email)
+            
         }
     }
 
@@ -20,7 +21,7 @@ export const InputUser = ({mostraTela}) => {
                 placeholder="Usuario"
                 value={name}
                 onChange={event => setName(event.target.value)}
-                onKeyUp={handleUser}
+                onClick={handleUser}
             ></C.Input>
         </C.Area>
         <C.Area>
@@ -29,7 +30,7 @@ export const InputUser = ({mostraTela}) => {
                 placeholder="Email"
                 value={email}
                 onChange={event => setEmail(event.target.value)}
-                onKeyUp={handleUser}
+                onClick={handleUser}
             ></C.Input>
         </C.Area>
        </C.Container>

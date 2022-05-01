@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import * as C from './styles';
 
-export const InputPassword= ({mostraTela}) => {
+export const InputPassword= () => {
 
     const [image, setImage] = useState("https://cdn-icons-png.flaticon.com/512/535/535193.png")
     const [otherImage, setOtherImage] = useState("https://cdn-icons-png.flaticon.com/512/535/535193.png")
@@ -13,7 +13,7 @@ export const InputPassword= ({mostraTela}) => {
     const handlePassword = ( ) => {
         if((password.trim() === confirmPassword.trim()) 
          && (password.trim() != "" && confirmPassword.trim() != "")){
-          mostraTela(password)
+          console.log(password)
         }
     }
 
