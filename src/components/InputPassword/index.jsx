@@ -49,6 +49,7 @@ export const InputPassword= () => {
             value={password}
             onChange={ event => setPassword(event.target.value)}
             onKeyUp={handlePassword}></C.Input>
+            
             <C.Img onClick={handleChangeType} src={image} alt="olhos"></C.Img>
         </C.Area>
 
@@ -59,6 +60,7 @@ export const InputPassword= () => {
             value={confirmPassword}
             onChange={ event => setConfirmPassword(event.target.value)}
             onKeyUp={handlePassword}></C.Input>
+
             <C.Img onClick={newType} src={otherImage} alt="olhos"></C.Img>
         </C.Area>
       </C.Container>

@@ -12,12 +12,6 @@ export const InputUser = () => {
         }
     }
 
-    const  registerUser = () => {
-        if(name.trim() != '' && email.trim != ''){
-            console.log(name, email)
-        }
-    }
-
     return(
        <C.Container>
          <C.Area>
@@ -26,7 +20,7 @@ export const InputUser = () => {
                 placeholder="Usuario"
                 value={name}
                 onChange={event => setName(event.target.value)}
-                onKeyUp={registerUser}
+                onKeyUp={handleUser}
             ></C.Input>
         </C.Area>
         <C.Area>
@@ -35,7 +29,7 @@ export const InputUser = () => {
                 placeholder="Email"
                 value={email}
                 onChange={event => setEmail(event.target.value)}
-                onKeyUp= {registerUser}
+                onKeyUp={handleUser}
             ></C.Input>
         </C.Area>
        </C.Container>
