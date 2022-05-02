@@ -1,4 +1,5 @@
 import {useState,KeyboardEvent} from 'react';
+import {InputPassword} from '../InputPassword'
 import * as C from './styles';
 
 export const InputUser = ({mostraTela}) => {
@@ -7,9 +8,8 @@ export const InputUser = ({mostraTela}) => {
     const [email, setEmail] = useState('')
 
     const handleUser = (event) => {
-        if( name.trim() != '' && email.trim() != '' && event.onClick){
-            mostraTela(name.t, email)
-            
+        if( name.trim() !== '' && email.trim() !== '' && event.onClick){
+            mostraTela(name, email)
         }
     }
 
@@ -19,20 +19,21 @@ export const InputUser = ({mostraTela}) => {
             <C.Input 
                 types="text" 
                 placeholder="Usuario"
-                value={name}
+                value={name.toLowerCase()}
                 onChange={event => setName(event.target.value)}
-                onClick={handleUser}
+                onKeyUp={handleUser}
             ></C.Input>
         </C.Area>
         <C.Area>
             <C.Input 
                 types="email" 
                 placeholder="Email"
-                value={email}
+                value={email.toLowerCase()}
                 onChange={event => setEmail(event.target.value)}
-                onClick={handleUser}
+                onKeyUp={handleUser}
             ></C.Input>
         </C.Area>
+        < InputPassword/>
        </C.Container>
     )
 }

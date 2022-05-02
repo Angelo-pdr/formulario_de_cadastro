@@ -39,7 +39,6 @@ export const InputPassword= () => {
       }
     }
 
-
     return(
       <C.Container>
           <C.Area>
