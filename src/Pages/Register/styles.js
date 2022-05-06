@@ -16,8 +16,14 @@ export const Container = styled.div`
         color: white;
         padding: 8px 1px;
         border: 1px solid white;
+        border-radius: 8px;
         cursor: pointer;
         
+    }
+
+    .submit:hover{
+        color: #673AB7;
+        border: 1px solid  #673AB7;
     }
 
 `
