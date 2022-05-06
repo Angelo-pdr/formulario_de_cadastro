@@ -22,3 +22,9 @@ export const Input = styled.input`
     border: none;
     flex:1;
 `
+export const Img = styled.img`
+   height: 20px;
+   margin: auto;
+   margin-right: 5px;
+   cursor: pointer;
+`

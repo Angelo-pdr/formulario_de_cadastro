@@ -1,6 +1,7 @@
 import * as C from './styles'
 import {InputUser} from '../../components/HomeComponents'
 
+
 export const Home = () => {
 
     return(
