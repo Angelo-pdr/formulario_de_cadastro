@@ -25,11 +25,3 @@ export const HeaderText = styled.h1`
     text-align: center;
 `
 
-export const Paragrafo = styled.p`
-    text-align: center;
-    font-size: 20px;
-
-    .servido{
-        color: #673AB7;
-    }
-`

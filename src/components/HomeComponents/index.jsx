@@ -14,21 +14,22 @@ export const InputUser = () => {
 
     return(
        <C.Container>
-         <C.Area>
-            <C.Input 
-                types="text" 
-                placeholder="Usuario"
-                value={name.toLowerCase()}
-                onChange={event => setName(event.target.value)}
-                onKeyUp={handleUser}
-            ></C.Input>
-        </C.Area>
+      
         <C.Area>
             <C.Input 
                 types="email" 
                 placeholder="Email"
                 value={email.toLowerCase()}
                 onChange={event => setEmail(event.target.value)}
+                onKeyUp={handleUser}
+            ></C.Input>
+        </C.Area>
+        <C.Area>
+            <C.Input 
+                types="password" 
+                placeholder="Senha"
+                value={name.toLowerCase()}
+                onChange={event => setName(event.target.value)}
                 onKeyUp={handleUser}
             ></C.Input>
         </C.Area>
