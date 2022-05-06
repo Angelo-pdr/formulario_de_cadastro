@@ -1,12 +1,12 @@
 import * as C from './App.styles'
 import {useState} from 'react'
-import {RegistrationScreen} from './components/RegistrationScreen'
+import {MainRoutes} from './routes/mainRoutes'
 
 const App = () => {
 
   return (
     <C.Body>
-      <RegistrationScreen />
+      <MainRoutes/>
     </C.Body>
   )
 }

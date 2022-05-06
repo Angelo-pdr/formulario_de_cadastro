@@ -33,7 +33,7 @@ export const InputUser = ({mostraTela}) => {
                 onKeyUp={handleUser}
             ></C.Input>
         </C.Area>
-        < InputPassword/>
+        
        </C.Container>
     )
 }
