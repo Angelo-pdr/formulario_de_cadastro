@@ -1,5 +1,4 @@
 import {useState,KeyboardEvent} from 'react';
-import {InputPassword} from '../InputPassword'
 import * as C from './styles';
 
 export const InputUser = ({mostraTela}) => {

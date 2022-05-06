@@ -1,6 +1,6 @@
 import * as C from './styles'
-import {InputPassword} from '../../components/InputPassword'
-import {InputUser} from '../../components/InputUser'
+import {InputPassword} from '../../components/RegistrationComponents/InputPassword'
+import {InputUser} from '../../components/RegistrationComponents/InputUser'
 
 export const Register = () => {
    return(
