@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    height: 400px;
-    width: 350px;
+    height: 350px;
+    width: 300px;
     background-color: #333333;
     color: white;
     border-radius: 10px;
-    padding: 15px;
+    padding: 0px;
     text-align: center;
     
     .submit{
@@ -25,11 +25,3 @@ export const HeaderText = styled.h1`
     text-align: center;
 `
 
-export const Paragrafo = styled.p`
-    text-align: center;
-    font-size: 20px;
-
-    .servido{
-        color: #673AB7;
-    }
-`

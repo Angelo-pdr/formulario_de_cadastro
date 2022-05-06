@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    height: 400px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     background-color: #333333;
     color: white;
     border-radius: 10px;
-    padding: 15px;
+    padding: 0px;
     text-align: center;
     
     .submit{
-        margin-top: 20px;
+        margin-top: 10px;
         width: 50%;
         background-color: transparent;
         color: white;
@@ -23,5 +23,18 @@ export const Container = styled.div`
 `
 export const HeaderText = styled.h1`
     text-align: center;
+`
+export const P = styled.p`
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    .link{
+        color: white;
+        text-decoration: none;
+    }
+    .link:hover{
+        color: black;
+        text-decoration: underline;
+    }
 `
 

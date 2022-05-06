@@ -5,11 +5,11 @@ import {InputUser} from '../../components/RegistrationComponents/InputUser'
 export const Register = () => {
    return(
         <C.Container>
-            <C.HeaderText>Registro</C.HeaderText>
-            <C.Paragrafo>Registre-se agora no <span className='servido'>seu servido</span></C.Paragrafo>
+            <C.HeaderText>Cadastra</C.HeaderText>
+            
                 <InputUser /> 
                 <InputPassword />
-            <input type="submit" value="Registrar-se" className='submit' />
+            <input type="submit" value="Cadastre-se" className='submit' />
         </C.Container>
    )
 }
