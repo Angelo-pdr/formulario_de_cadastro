@@ -4,7 +4,7 @@ export const AuthContext = React.createContext({})
 
 export const AutoProvider = (props) => {
     const user ={
-        name: 'Angelo',
+        name: '',
         email: '',
         password:''
     }

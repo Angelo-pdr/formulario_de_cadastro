@@ -1,14 +1,17 @@
-import {useState, KeyboardEvent} from 'react';
+import {useState, KeyboardEvent, useContext} from 'react';
+import {AuthContext} from '../../../contexts/Context'
 import * as C from './styles';
 
 export const InputUser = () => {
 
+    const {user} = useContext(AuthContext)
     const [name, setName] = useState ('')
     const [email, setEmail] = useState('')
 
-    const handleUser = (event) => {
-        if( name.trim() !== '' && email.trim() !== '' && event.onClick){
-            mostraTela(name, email)
+    const handleUser = () => {
+        if( name.trim() !== '' && email.trim() !== ''){
+            user.name = name
+            user.email = email
         }
     }
 
