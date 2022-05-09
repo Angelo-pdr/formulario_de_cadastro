@@ -1,8 +1,11 @@
-import {useState} from 'react';
+import {useContext, useState} from 'react';
 import * as C from './styles';
+import {AuthContext} from '../../../contexts/Context'
 
 export const InputPassword= () => {
 
+
+    const {user} = useContext(AuthContext)
     const [image, setImage] = useState("https://cdn-icons-png.flaticon.com/512/535/535193.png")
     const [otherImage, setOtherImage] = useState("https://cdn-icons-png.flaticon.com/512/535/535193.png")
     const [password, setPassword] = useState ('')
@@ -13,13 +16,14 @@ export const InputPassword= () => {
     const handlePassword = ( ) => {
         if((password.trim() === confirmPassword.trim()) 
          && (password.trim() != "" && confirmPassword.trim() != "")){
-          console.log(password)
+          user.password = password
+          console.log(user.password)
         }
     }
 
     const handleChangeType = () => {
       if(image == "https://cdn-icons-png.flaticon.com/512/535/535193.png" ){
-        setImage("https://cdn-icons.flaticon.com/png/512/3178/premium/3178377.png?token=exp=1651272222~hmac=22e7fb213a609112bd676ec3a120b36f")
+        setImage("https://cdn-icons.flaticon.com/png/512/3178/premium/3178377.png?token=exp=1652106701~hmac=f651817fff025a0ba070ee500a5bbeb6")
         setShow(true)
     
       }else{
@@ -30,7 +34,7 @@ export const InputPassword= () => {
 
     const newType = () => {
       if(otherImage == "https://cdn-icons-png.flaticon.com/512/535/535193.png" ){
-        setOtherImage("https://cdn-icons.flaticon.com/png/512/3178/premium/3178377.png?token=exp=1651272222~hmac=22e7fb213a609112bd676ec3a120b36f")
+        setOtherImage("https://cdn-icons.flaticon.com/png/512/3178/premium/3178377.png?token=exp=1652106701~hmac=f651817fff025a0ba070ee500a5bbeb6")
         setOtherShow(true)
     
       }else{
