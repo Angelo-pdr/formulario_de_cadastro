@@ -12,7 +12,8 @@ export const InputUser = () => {
         if( name.trim() !== '' && email.trim() !== ''){
             user.name = name
             user.email = email
-            console.log(user)
+            setName('')
+            setEmail('')
         }
     }
 

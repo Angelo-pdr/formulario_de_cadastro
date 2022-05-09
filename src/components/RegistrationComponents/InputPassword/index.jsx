@@ -17,7 +17,8 @@ export const InputPassword= () => {
         if((password.trim() === confirmPassword.trim()) 
          && (password.trim() != "" && confirmPassword.trim() != "")){
           user.password = password
-          
+          setConfirmPassword('')
+          setPassword('')
         }
     }
 
