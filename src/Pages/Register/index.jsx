@@ -12,11 +12,15 @@ export const Register = () => {
         localStorage.setItem('user', JSON.stringify(user))
     }
 
+    const userList = () =>{
+        
+    }
+
    return(
         <C.Container>
             <C.HeaderText>Cadastra</C.HeaderText>
-                <InputUser /> 
-                <InputPassword />
+                <InputUser userList ={userList}/> 
+                <InputPassword  userList={userList}/>
             <input type="submit" value="Cadastre-se" className='submit' onClick={AddLocalStorage} />
         </C.Container>
    )
