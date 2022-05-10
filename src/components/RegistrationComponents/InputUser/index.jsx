@@ -2,7 +2,7 @@ import {useState, KeyboardEvent, useContext} from 'react';
 import {AuthContext} from '../../../contexts/Context'
 import * as C from './styles';
 
-export const InputUser = (props) => {
+export const InputUser = () => {
 
     const {user} = useContext(AuthContext)
     const [name, setName] = useState ('')
@@ -12,7 +12,6 @@ export const InputUser = (props) => {
         if( name.trim() !== '' && email.trim() !== ''){
             user.name = name
             user.email = email
-            props.userList(user.name, user.email )
         }
     }
 

@@ -2,7 +2,7 @@ import {useContext, useState} from 'react';
 import * as C from './styles';
 import {AuthContext} from '../../../contexts/Context'
 
-export const InputPassword= (props) => {
+export const InputPassword= () => {
 
 
     const {user} = useContext(AuthContext)
@@ -17,7 +17,6 @@ export const InputPassword= (props) => {
         if((password.trim() === confirmPassword.trim()) 
          && (password.trim() != "" && confirmPassword.trim() != "")){
           user.password = password
-          props.userList(user.password)
         }
     }
 
