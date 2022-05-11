@@ -4,7 +4,7 @@ export const Container =styled.div``
 
 export const Area = styled.div`
     background-color: white;
-    width: 74%;
+    width: 70%;
     border-radius: 3px;
     margin: 10px 0;
     margin-left: 45px;

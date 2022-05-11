@@ -10,7 +10,6 @@ export const Register = () => {
 
     useEffect(() => {
         AddLocalStorage()
-        console.log(localStorage.getItem('user'))
     },[userNew])
     
     const AddLocalStorage = () => {

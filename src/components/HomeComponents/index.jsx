@@ -10,7 +10,7 @@ export const InputUser = () => {
 
     const handleChangeType = () => {
         if(image == "https://cdn-icons-png.flaticon.com/512/535/535193.png" ){
-          setImage("https://cdn-icons.flaticon.com/png/512/3178/premium/3178377.png?token=exp=1651272222~hmac=22e7fb213a609112bd676ec3a120b36f")
+          setImage("https://cdn-icons.flaticon.com/png/512/3178/premium/3178377.png?token=exp=1652106701~hmac=f651817fff025a0ba070ee500a5bbeb6")
           setShow(true)
       
         }else{
@@ -19,9 +19,8 @@ export const InputUser = () => {
         }
     }  
 
-
-    const handleUser = (event) => {
-        if( userPassword.trim() !== '' && email.trim() !== '' && event.onClick){
+    const handleUser = () => {
+        if( userPassword.trim() !== '' && userEmail.trim() !== ''){
             
         }
     }
