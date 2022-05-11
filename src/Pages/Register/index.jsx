@@ -2,14 +2,19 @@ import * as C from './styles'
 import {InputPassword} from '../../components/RegistrationComponents/InputPassword'
 import {InputUser} from '../../components/RegistrationComponents/InputUser'
 import {AuthContext} from '../../contexts/Context'
-import { useState, useContext } from 'react'
+import { useState, useContext, useEffect } from 'react'
 
 export const Register = () => {
     const {user} = useContext(AuthContext)
     const [userNew, setUserNew] = useState (JSON.parse(localStorage.getItem('userNew') || '[]'))
 
+    useEffect(() => {
+        AddLocalStorage()
+        console.log(localStorage.getItem('user'))
+    },[userNew])
+    
     const AddLocalStorage = () => {
-        localStorage.setItem('user', JSON.stringify(user))
+        localStorage.setItem('user', JSON.stringify(userNew))
     }
 
     const userList = ( ) =>{
@@ -22,6 +27,7 @@ export const Register = () => {
         })
         setUserNew(newList)
         AddLocalStorage()
+        
     }
 
    return(

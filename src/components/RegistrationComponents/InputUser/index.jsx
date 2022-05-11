@@ -10,8 +10,8 @@ export const InputUser = () => {
 
     const handleUser = () => {
         if( name.trim() !== '' && email.trim() !== ''){
-            user.name = name
-            user.email = email
+            user.name = name.toLowerCase()
+            user.email = email.toLowerCase()
         }
     }
 
@@ -21,7 +21,7 @@ export const InputUser = () => {
             <C.Input 
                 types="text" 
                 placeholder="Usuario"
-                value={name.toLowerCase()}
+                value={name}
                 onChange={event => setName(event.target.value)}
                 onKeyUp={handleUser}
             ></C.Input>
@@ -30,7 +30,7 @@ export const InputUser = () => {
             <C.Input 
                 types="email" 
                 placeholder="Email"
-                value={email.toLowerCase()}
+                value={email}
                 onChange={event => setEmail(event.target.value)}
                 onKeyUp={handleUser}
             ></C.Input>
