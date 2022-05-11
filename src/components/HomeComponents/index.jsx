@@ -1,7 +1,7 @@
 import {useState, KeyboardEvent} from 'react';
 import * as C from './styles';
 
-export const InputUser = () => {
+export const InputUser = (props) => {
 
     const [userPassword, setUserPassword] = useState ('')
     const [userEmail, setUserEmail] = useState('')
@@ -21,7 +21,7 @@ export const InputUser = () => {
 
     const handleUser = () => {
         if( userPassword.trim() !== '' && userEmail.trim() !== ''){
-            
+            props.validUser(userPassword, userEmail)
         }
     }
 
