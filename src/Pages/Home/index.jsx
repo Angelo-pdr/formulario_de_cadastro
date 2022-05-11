@@ -1,11 +1,17 @@
 import * as C from './styles'
 import {InputUser} from '../../components/HomeComponents'
 import {Link} from 'react-router-dom'
+import {useState} from 'react'
 
 export const Home = () => {
-
+    const [userList, setUserList] = useState (JSON.parse(localStorage.getItem('user') || '[]'))
     const validUser = (taskPassword, taskEmail) =>{
-        
+
+        for(let index in userList){
+            if(taskPassword == userList[index].password &&  taskEmail === userList[index].email ){
+                console.log(`dados corretos`)
+            }
+        }
     }
 
     return(
