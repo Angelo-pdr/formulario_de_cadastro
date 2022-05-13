@@ -9,9 +9,10 @@ export const Home = () => {
     const [userList, setUserList] = useState (JSON.parse(localStorage.getItem('user') || '[]'))
 
     const validUser = (taskPassword, taskEmail) =>{
+        
         for(let index in userList){
             if(taskPassword == userList[index].password && taskEmail == userList[index].email){
-               return navigate("/dashboard")
+                navigate("/dashboard")
             }
         }
     }
@@ -20,7 +21,7 @@ export const Home = () => {
         <C.Container>
             <C.HeaderText>Login</C.HeaderText>
             <InputUser validUser={validUser}/>
-            <input type="submit" value="loga" className='submit' onClick={validUser}/>
+            <input type="submit" value="loga" className='submit' onSubmit={() => validUser}/>
             <C.P><Link to="/cadastro" className='link'>Criar uma conta!</Link></C.P>
         </C.Container>
     )
