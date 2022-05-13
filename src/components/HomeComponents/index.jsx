@@ -1,4 +1,5 @@
 import {useState, KeyboardEvent} from 'react';
+import {mainFunction} from '../../helpers/mainFunction'
 import * as C from './styles';
 
 export const InputUser = (props) => {
