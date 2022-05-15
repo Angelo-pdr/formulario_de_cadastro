@@ -1,8 +1,10 @@
-import {useState} from 'react';
+import {useState, useContext} from 'react';
 import * as C from './styles';
+import {AuthContext} from '../../contexts/Context'
 
-export const InputUser = (props) => {
+export const InputUser = () => {
 
+    const {user} = useContext(AuthContext)
     const [userPassword, setUserPassword] = useState ('')
     const [userEmail, setUserEmail] = useState('')
     const [show, setShow] = useState( false)
@@ -21,7 +23,8 @@ export const InputUser = (props) => {
 
     const handleUser = () => {
         if( userPassword.trim() !== '' && userEmail.trim() !== ''){
-            props.validUser(userPassword, userEmail)
+            user.email = userEmail
+            user.password = userPassword
         }
     }
 

@@ -13,5 +13,3 @@ export const AutoProvider = (props) => {
         <AuthContext.Provider value={{user}}>{props.children}</AuthContext.Provider>
     )
 }
-
-

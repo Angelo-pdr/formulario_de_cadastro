@@ -4,7 +4,6 @@ import {AuthContext} from '../../../contexts/Context'
 
 export const InputPassword= () => {
 
-
     const {user} = useContext(AuthContext)
     const [image, setImage] = useState("https://cdn-icons-png.flaticon.com/512/535/535193.png")
     const [otherImage, setOtherImage] = useState("https://cdn-icons-png.flaticon.com/512/535/535193.png")
