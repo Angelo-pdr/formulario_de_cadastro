@@ -6,7 +6,7 @@ export const AutoProvider = (props) => {
     const user ={
         name: '',
         email: '',
-        password:''
+        password:'',
     }
 
     return(

@@ -2,14 +2,14 @@ import * as C from './styles'
 import {InputUser} from '../../components/HomeComponents'
 import {useNavigate, Link} from 'react-router-dom'
 import {AuthContext} from '../../contexts/Context'
-import {useContext} from 'react'
+import {useContext, useState} from 'react'
 
 export const Home = () => {
 
     const navigate = useNavigate()
     const {user} = useContext(AuthContext)
-    const userList = JSON.parse(localStorage.getItem('user') || '[]')
-
+    const [userList, setUserList] = useState(JSON.parse(localStorage.getItem('user') || '[]'))
+    
     const validUser = () =>{
         for(let index in userList){
             if(user.password == userList[index].password && user.email == userList[index].email){
