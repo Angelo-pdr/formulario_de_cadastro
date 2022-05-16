@@ -21,7 +21,7 @@ export const InputPassword= () => {
 
     const handleChangeType = () => {
       if(image == "https://cdn-icons-png.flaticon.com/512/535/535193.png" ){
-        setImage("https://cdn-icons.flaticon.com/png/512/3178/premium/3178377.png?token=exp=1652106701~hmac=f651817fff025a0ba070ee500a5bbeb6")
+        setImage("https://cdn-icons.flaticon.com/png/512/3178/premium/3178377.png?token=exp=1652742993~hmac=2e1f9a364cbb09afaf92d1374e1016c0")
         setShow(true)
     
       }else{
@@ -32,7 +32,7 @@ export const InputPassword= () => {
 
     const newType = () => {
       if(otherImage == "https://cdn-icons-png.flaticon.com/512/535/535193.png" ){
-        setOtherImage("https://cdn-icons.flaticon.com/png/512/3178/premium/3178377.png?token=exp=1652106701~hmac=f651817fff025a0ba070ee500a5bbeb6")
+        setOtherImage("https://cdn-icons.flaticon.com/png/512/3178/premium/3178377.png?token=exp=1652742993~hmac=2e1f9a364cbb09afaf92d1374e1016c0")
         setOtherShow(true)
     
       }else{

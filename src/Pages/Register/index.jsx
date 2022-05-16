@@ -26,7 +26,6 @@ export const Register = () => {
         })
         setUserNew(newList)
         AddLocalStorage()
-        
     }
 
    return(
