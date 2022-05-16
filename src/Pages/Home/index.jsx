@@ -8,7 +8,7 @@ export const Home = () => {
 
     const navigate = useNavigate()
     const {user} = useContext(AuthContext)
-    const userList = useState(JSON.parse(localStorage.getItem('user') || '[]'))
+    const userList = JSON.parse(localStorage.getItem('user') || '[]')
 
     const validUser = () =>{
 
@@ -16,9 +16,9 @@ export const Home = () => {
 
             if(user.password == userList[index].password && user.email == userList[index].email){
                 navigate("/dashboard")
-                return
+                
             }
-
+            
         }
 
     }
