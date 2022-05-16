@@ -8,16 +8,22 @@ export const Home = () => {
 
     const navigate = useNavigate()
     const {user} = useContext(AuthContext)
-    const [userList, setUserList] = useState(JSON.parse(localStorage.getItem('user') || '[]'))
-    
+    const userList = useState(JSON.parse(localStorage.getItem('user') || '[]'))
+
     const validUser = () =>{
+
         for(let index in userList){
+
             if(user.password == userList[index].password && user.email == userList[index].email){
                 navigate("/dashboard")
+                return
             }
+
         }
+
     }
 
+    
     return(
         <C.Container>
             <C.HeaderText>Login</C.HeaderText>
@@ -25,6 +31,5 @@ export const Home = () => {
             <input type="submit" value="loga" className='submit' onClick={validUser}/>
             <C.P><Link to="/cadastro" className='link'>Criar uma conta!</Link></C.P> 
         </C.Container>
-
     )
 }
